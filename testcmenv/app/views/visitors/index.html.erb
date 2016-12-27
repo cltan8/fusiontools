@@ -1,0 +1,3 @@
+    <%= form_for(:visitor, url: searchvisitor_path, method: "post") do |f| %>
+      <%= f.label :first_name %>: <%= f.text_field :first_name %>  <%= f.submit "Search", class: "btn btn-primary" %>
+    <% end %>
