@@ -1,1 +1,22 @@
-<%=Time.new.inspect%>
+<div><b>TIME</b></div>
+<div><%=Time.new.inspect%></div>
+<br/><br/>
+
+<div><b>VM DEV01 & QA26</b></div>
+<%  @res.each do |res| %>
+<div><%=res%></div>
+<%  end %>
+<br/><br/>
+
+<div><b>Staging</b></div>
+<%  @res2.each do |res2| %>
+<div><%=res2%></div>
+<%  end %>
+
+<br/><br/>
+<div><b>HTTP Code:Information</b></div>
+<div>200:OK.</div>
+<div>301:Moved Permanently</div>
+<div>302:Found.Moved Temporarily.An HTTP response with this status code will additionally provide a URL in the location header field.</div>
+<div>401:Unauthorized.</div>
+<div>999:Fusion Error.</div>

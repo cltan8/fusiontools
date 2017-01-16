@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'sessions#loginpage'
   resources :fusions
+  get "/fusionstest", to: "fusions#test"
   resources :users
   resources :visitors
   get "/secure", to: "sessions#loginpage"
